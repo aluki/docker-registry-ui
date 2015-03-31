@@ -27,5 +27,5 @@ RUN     chmod +x /usr/share/tomcat7/bin/custom-startup.sh
 EXPOSE  8080
 VOLUME  ["/var/lib/h2/", "/var/lib/tomcat7"]
 ENV     CATALINA_BASE /var/lib/tomcat7
-CMD     /usr/share/tomcat7/bin/custom-startup.sh
+CMD     ["/usr/share/tomcat7/bin/custom-startup.sh"]
 
